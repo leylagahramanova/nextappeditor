@@ -36,7 +36,7 @@ const ShareModal = ({ roomId, collaborators, creatorId, currentUserType }: Share
       roomId, 
       email, 
       userType: userType as UserType, 
-      updatedBy: user.info,
+  updatedBy: user?.info || {},
       
     });
 
@@ -94,7 +94,7 @@ const ShareModal = ({ roomId, collaborators, creatorId, currentUserType }: Share
                 key={collaborator.id}
                 roomId={roomId}
                 creatorId={creatorId}
-                email={collaborator.email}
+        email={collaborator.email ?? ''}
                 collaborator={collaborator}
                 user={user.info}
               />

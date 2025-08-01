@@ -1,3 +1,4 @@
+'use client'
 import { cn } from '@/lib/utils';
 import { useIsThreadActive } from '@liveblocks/react-lexical';
 import { Composer, Thread } from '@liveblocks/react-ui';

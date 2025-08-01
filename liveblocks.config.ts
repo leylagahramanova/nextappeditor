@@ -15,15 +15,16 @@ declare global {
     };
 
     // Custom user info set when authenticating with a secret key
-    UserMeta: {
-      id: string;
-      info: {
-        name: string;
-        id: string;
-        avatar:string;
-        color:string;
-      };
-    };
+UserMeta: {
+  id: string;
+  info: {
+    name: string;
+    id: string;
+    avatar: string;
+    color: string;
+    email: string; // <-- add email here
+  };
+};
 
     // Custom events, for useBroadcastEvent, useEventListener
     RoomEvent: {};
